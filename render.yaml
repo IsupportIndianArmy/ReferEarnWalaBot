@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: telegram-referral-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8162907304:AAEzeqxRP8lCFxzY8tj-3HdySxvNXAJd3i4
